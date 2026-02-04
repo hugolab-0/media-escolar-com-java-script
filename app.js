@@ -1,11 +1,3 @@
-/*************************************************************
- * Objetivo: Calcular médias escolares
- * Data: 29/01/2026
- * Autor: Anderson
- * Versão: 1.0
- ************************************************************/
-
-
 /*
     Existem 3 formas de criação de variáveis
 
@@ -29,6 +21,42 @@
             A const você pode criar com letras MAIUSCULAS.
 
 */
+
+ /*
+            Operadores de Comparação
+                    
+               ==  -> Permite comparar a igualdade de dois constantes
+             <   -> Permite comparar valores menores
+             >   -> Permite comparar valores maiores
+             >=  -> Permite comparar valores maiores ou iguais
+             <=  -> Permite comparar valores menores ou iguais
+             !=  -> Permite comparar a diferença entre conteúdos
+             === -> Permite comparar o a idualdade de conteúdos 
+                      e a tipagem de dados
+              !== -> Permite comparar a diferença de conteúdos e a
+                     igualdade de tipos de dados
+             ==! -> Permite comparar a igualdade de conteúdos e a
+                       diferença de tipos de dados
+              !=! -> Permite comparar a diferença de conteúdos e a
+                      diferença de tipos de dados
+
+                        Operadores Lógicos
+
+                            E   -> AND  -> &&
+                            OU  -> OR   -> ||
+                            NÃO -> NOT  -> !
+
+                        
+             conversões para tipos dados
+             parseInt() -> permite converter um string para um numero inteiro
+             parseFloat() -> permite converter um string para um numero inteiro
+             Number() -> permite converter um string para um numero inteiro
+             String() -> permite converter um um conteúdo par uma string
+             Boolean() -> permite converter um conteúdo para BOOLEANO
+             typeof() -> permite verificar o tipo de dado de uma variável
+             tofixed() -> permite fixar a qtde casa decimais.
+    */
+
 
 
 //Import da biblioteca
@@ -60,42 +88,6 @@ entradaDeDados.question('Digite o nome do aluno:', function(nome){
                 //Entrada da nota4
                 entradaDeDados.question('Digite a nota 4:', function(valor4){
                     let nota4 = valor4
-
-                    /*
-                        Operadores de Comparação
-                    
-                        ==  -> Permite comparar a igualdade de dois constantes
-                        <   -> Permite comparar valores menores
-                        >   -> Permite comparar valores maiores
-                        >=  -> Permite comparar valores maiores ou iguais
-                        <=  -> Permite comparar valores menores ou iguais
-                        !=  -> Permite comparar a diferença entre conteúdos
-                        === -> Permite comparar o a idualdade de conteúdos 
-                                e a tipagem de dados
-                        !== -> Permite comparar a diferença de conteúdos e a
-                                igualdade de tipos de dados
-                        ==! -> Permite comparar a igualdade de conteúdos e a
-                                diferença de tipos de dados
-                        !=! -> Permite comparar a diferença de conteúdos e a
-                                diferença de tipos de dados
-
-                        Operadores Lógicos
-
-                            E   -> AND  -> &&
-                            OU  -> OR   -> ||
-                            NÃO -> NOT  -> !
-
-                        
-                        conversões para tipos dados
-                        parseInt() -> permite converter um string para um numero inteiro
-                        parseFloat() -> permite converter um string para um numero inteiro
-                        Number() -> permite converter um string para um numero inteiro
-                        String() -> permite converter um um conteúdo par uma string
-                        Boolean() -> permite converter um conteúdo para BOOLEANO
-                        typeof() -> permite verificar o tipo de dado de uma variável
-                        tofixed() -> permite fixar a qtde casa decimais.
-
-                        */
 
 
                     //Validação de entrada vazia
