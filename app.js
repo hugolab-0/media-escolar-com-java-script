@@ -85,7 +85,19 @@ entradaDeDados.question('Digite o nome do aluno:', function(nome){
                             OU  -> OR   -> ||
                             NÃO -> NOT  -> !
 
-                    */
+                        
+                        conversões para tipos dados
+                        parseInt() -> permite converter um string para um numero inteiro
+                        parseFloat() -> permite converter um string para um numero inteiro
+                        Number() -> permite converter um string para um numero inteiro
+                        String() -> permite converter um um conteúdo par uma string
+                        Boolean() -> permite converter um conteúdo para BOOLEANO
+                        typeof() -> permite verificar o tipo de dado de uma variável
+                        tofixed() -> permite fixar a qtde casa decimais.
+
+                        */
+
+
                     //Validação de entrada vazia
                     if (nomeAluno == '' || nota1 == '' || nota2 == '' || nota3 == '' || nota4 == ''){
                         console.log('ERRO: é obrigatório o preenchimento de todos os dados !!!')
@@ -101,64 +113,37 @@ entradaDeDados.question('Digite o nome do aluno:', function(nome){
                         console.log('ERRO: as notas devem ser preenchidas somente com numeros')
                     }
                     else{
-                        /*
-                        
-                        conversões para tipos dados
-                        parseInt() -> permite converter um string para um numero inteiro
-                        parseFloat() -> permite converter um string para um numero inteiro
-                        Number() -> permite converter um string para um numero inteiro
-                        String() -> permite converter um um conteúdo par uma string
-                        Boolean() -> permite converter um conteúdo para BOOLEANO
-                        typeof() -> permite verificar o tipo de dado de uma variável
-                        tofixed() -> permite fixar a qtde casa decimais.
 
-                        */
+                        let statusAluno;
+                 
                         //Calcular a média
-                        let media = ( Number(nota1) + Number(nota2) + Number(nota3) + Number(nota4) ) / 4
+                        let media = ( Number(nota1) + Number(nota2) + Number(nota3) + Number(nota4) ) / 4;
 
                         if (media >= 70){
 
-                            console.log('----------------------------------------------------')
-
-                            console.log('ALUNO(A) ' + nomeAluno + ' APROVADO!')
-
-                            console.log('----------------------------------------------------')
-
-                            console.log('Nome do aluno: ' + nomeAluno)
-                            console.log('A média do aluno é: ' + media.toFixed(2))
-                            console.log('Estado: aprovado')
-
-    
+                            statusAluno =' aprovado!';
                         }
     
                         else if(media < 50) {
 
-                            console.log('----------------------------------------------------')
-
-                            console.log('ALUNO(A) ' + nomeAluno + ' REPROVADO!')
-
-                            console.log('----------------------------------------------------')
-
-                            console.log('Nome do aluno: ' + nomeAluno)
-                            console.log('A média do aluno é: ' + media.toFixed(2))
-                            console.log('Estado: reprovado')
-    
+                            statusAluno =' reprovado!';
                         }
 
                         else{
 
-                            console.log('----------------------------------------------------')
+                            statusAluno =' em recuperação!';
+                        }
 
-                            console.log('ALUNO(A) ' + nomeAluno + ' EM RECUPERAÇÃO!')
+                        console.log('----------------------------------------------------');
 
-                            console.log('----------------------------------------------------')
+                            console.log('ALUNO(A) ' + nomeAluno + statusAluno);
+
+                        console.log('----------------------------------------------------');
 
                             console.log('Nome do aluno: ' + nomeAluno)
                             console.log('A média do aluno é: ' + media.toFixed(2))
-                            console.log('Estado: recuperação')
-    
-                        }
-                        
+                            console.log('Estado: ' + statusAluno)
+
 
                     }
 
