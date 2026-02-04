@@ -110,14 +110,59 @@ entradaDeDados.question('Digite o nome do aluno:', function(nome){
                         String() -> permite converter um um conteúdo par uma string
                         Boolean() -> permite converter um conteúdo para BOOLEANO
                         typeof() -> permite verificar o tipo de dado de uma variável
+                        tofixed() -> permite fixar a qtde casa decimais.
 
                         */
                         //Calcular a média
-                        let media = Number(nota1) + Number(nota2) + Number(nota3) + Number(nota4) / 4
+                        let media = ( Number(nota1) + Number(nota2) + Number(nota3) + Number(nota4) ) / 4
 
-                        console.log('Nome do aluno: ' + nomeAluno)
-                        console.log('A média do aluno é: ' + media)
+                        if (media >= 70){
+
+                            console.log('----------------------------------------------------')
+
+                            console.log('ALUNO(A) ' + nomeAluno + ' APROVADO!')
+
+                            console.log('----------------------------------------------------')
+
+                            console.log('Nome do aluno: ' + nomeAluno)
+                            console.log('A média do aluno é: ' + media.toFixed(2))
+                            console.log('Estado: aprovado')
+
+    
+                        }
+    
+                        else if(media < 50) {
+
+                            console.log('----------------------------------------------------')
+
+                            console.log('ALUNO(A) ' + nomeAluno + ' REPROVADO!')
+
+                            console.log('----------------------------------------------------')
+
+                            console.log('Nome do aluno: ' + nomeAluno)
+                            console.log('A média do aluno é: ' + media.toFixed(2))
+                            console.log('Estado: reprovado')
+    
+                        }
+
+                        else{
+
+                            console.log('----------------------------------------------------')
+
+                            console.log('ALUNO(A) ' + nomeAluno + ' EM RECUPERAÇÃO!')
+
+                            console.log('----------------------------------------------------')
+
+                            console.log('Nome do aluno: ' + nomeAluno)
+                            console.log('A média do aluno é: ' + media.toFixed(2))
+                            console.log('Estado: recuperação')
+    
+                        }
+                        
+
                     }
+
+                    
 
 
 
